@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size:13px;
+}
+:root {
+    /* colors */
+    /* primary */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --light-color: hsl(0, 0%, 100%);
+  
+    /* neutral */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+  
+    /* fonts */
+    --barlow-font: "Barlow Semi Condensed", sans-serif;
+}
+.container{
+    /* border: solid black; */
+    display: grid;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+}
+.nm{
+    color:hsl(0, 0%, 100%);
+    font-weight: 200px;
+    
+}
+.vm{
+    color:hsl(217, 19%, 35%) ;
+}
+.pa{
+    color: rgb(150, 63, 63);
+
+}
+.item{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: black;
+}
+/* Daniel clifford*/
+.item-1{
+    grid-column-start: 1;
+    grid-column-end:3;
+    background-color: var(--moderate-violet);
+    
+}
+.item-1 .sub{
+    font-size: 20px;
+}
+.item-1 img{
+    
+    border-radius: 50%;
+}
+.item-1 p{
+    margin: 1rem;
+   
+    color: hsl(210, 46%, 95%);
+    
+}
+
+.head{
+    display: flex;
+    margin: 5px;
+}
+.name{
+    margin-left: 1rem;
+    margin-top: 10px;
+    
+}
+/*Jonathan Walter*/
+.item-2{
+    background-color:var(--grayish-blue);
+}
+.item-2 .sub{
+    font-size: 20px;
+}
+.item-2 img{
+    
+    border-radius: 50%;
+}
+.item-2 p{
+    margin: 1rem;
+   
+    color: hsl(210, 46%, 95%);
+    
+}
+/*kira whittle*/
+.item-3{
+    background-color:var(--light-color) ;
+grid-row-start: 1;
+grid-row-end: 3;
+grid-column:4/5;
+}
+.item-3 .sub{
+    font-size: 20px;
+    color:hsl(219, 29%, 14%);
+    margin: 1rem;
+    
+}
+.item-3 img{
+    
+    border-radius: 50%;
+}
+.item-3 .para{
+    margin: 1rem;
+   
+    color:black;
+    
+}
+/*Jeanette Harmon*/
+
+
+.item-4 .sub{
+    font-size: 20px;
+    color:hsl(219, 29%, 14%);
+    margin: 1rem;
+    
+}
+.item-4 img{
+    
+    border-radius: 50%;
+}
+.item-4.para{
+    
+   
+    color:var(--light-gray);
+}
+/*Patrik Abrams*/
+.item-5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: var(--blackish-blue);
+}
+.item-5 .sub{
+    font-size: 20px;
+    color:var(--light-grayish-blue);
+    margin: 1rem;
+    
+}
+.item-5 img{
+    
+    border-radius: 50%;
+}
+.item-5 .para{
+    margin: 1rem;
+   
+    color:var(--light-gray);
+}
